@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--VeryDarkBlue);
+  color: var(--White);
+}
+:root{
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--LightGrey: hsl(217, 12%, 63%);
+--MediumGrey: hsl(216, 12%, 54%);
+--DarkBlue: hsl(213, 19%, 18%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+}
+.card{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height:23em;
+    width:23em;
+    background-color: var(--DarkBlue);
+    border-radius: 15px;
+}
+.ratingState
+{
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    align-items: left;
+    padding: 1em;
+    /* background-color: antiquewhite; */
+}
+.star
+{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-top: 1em;
+    background-color: hsl(217, 14%, 25%);
+    width: 2.5em;
+    padding: 0.8em;
+    border-radius: 50%;
+}
+.title h2
+{
+    font-weight: 700;
+    margin-top: 1em;
+    /* margin-left: 1em; */
+}
+.ratingContent p{
+    margin-top: 1em;
+    opacity: .5;
+    text-align: left;
+    font-size: 15px;
+}
+.ratings{
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    margin: .5em;
+}
+input[type="button"]
+{
+    padding: 1.2em;
+    width: 3.5em;
+    border-radius: 100%;
+    background-color: hsl(217, 14%, 25%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--LightGrey);
+}
+input[type="button"]:hover
+{
+    padding: 1.2em;
+    width: 3.5em;
+    border-radius: 100%;
+    background-color:var(--Orange);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--White);
+}
+
+input[type="button"]:focus
+{
+    padding: 1.2em;
+    width: 3.5em;
+    border-radius: 100%;
+    background-color:var(--LightGrey);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--White);
+}
+input[type="button"]::selection
+{
+    padding: 1.2em;
+    width: 3.5em;
+    border-radius: 100%;
+    background-color:var(--LightGrey);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--White);
+}
+.submitButton 
+{
+    display: flex;
+    margin: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.submitButton button{
+    background-color: var(--Orange);
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    padding: .5em;
+    font-weight: 400;
+    border-radius: 25px;
+    color: var(--White);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.submitButton button:hover{
+    background-color: var(--White);
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    padding: .5em;
+    font-weight: 400;
+    border-radius: 25px;
+    color: var(--Orange);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.thankyouState
+{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+.thankYouImg
+{
+    display: flex;
+    width: 10em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1em;
+}
+.rating{
+    margin-top: 1em;
+    background-color: hsl(217, 14%, 25%);
+    width: 70%;
+    text-align: center;
+    padding: .5em;
+    border-radius: 25px;
+    color: var(--Orange);
+}
+.regards{
+    font-size:xx-large ;
+    font-weight: 700;
+    margin-top: .7em;
+}
+.regardsContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin:0 1em; */
+    /* background-color: aqua; */
+}
+.regardsContent p:first-child{
+    margin-top: 1em;
+    opacity: .5;
+    font-size: 15px;
+    align-items: center;
+}
+.regardsContent p{
+    margin-top: .1em;
+    opacity: .5;
+    /* text-align: justify; */
+    font-size: 15px;
+    align-items: center;
+}
